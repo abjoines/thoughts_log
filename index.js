@@ -1,7 +1,7 @@
 let myThoughts = [];
 const inputEl = document.getElementById("thought-input");
 const submitBtn = document.getElementById("thought-btn");
-const thoughtsLocalStorage = JSON.parse( localStorage.getItem("myThoughts"));
+const thoughtsLocalStorage = JSON.parse(localStorage.getItem("myThoughts"));
 const clearBtn = document.getElementById("clear-btn");
 const countEl = document.getElementById("thought-counter");
 
@@ -10,8 +10,8 @@ submitBtn.addEventListener("click", function(){
     inputEl.value = "";
     localStorage.setItem("myThoughts", JSON.stringify(myThoughts));
     
-    renderCount()
-    console.log(myThoughts);
+    renderCount();
+    console.log(localStorage.getItem("myThoughts"));
 })
 
 inputEl.addEventListener("keyup", function(event) {
