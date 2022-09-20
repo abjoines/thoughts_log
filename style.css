@@ -40,6 +40,19 @@ p {
     padding-top: 2rem;
 }
 
+.delete-container{
+    /* border: solid red 1px; */
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+/* input and button */
 button {
     border: black solid 1px;
     padding: 1rem;
@@ -61,19 +74,6 @@ button:hover {
     transition: 0.3s;
 }
 
-.delete-container{
-    /* border: solid red 1px; */
-    margin: 0 auto;
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-}
-
-/* input and button bullshit */
 #thought-container {
     margin: 0 auto;
     max-width: 90%;
