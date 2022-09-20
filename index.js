@@ -4,7 +4,7 @@ const submitBtn = document.getElementById("thought-btn");
 const thoughtsLocalStorage = JSON.parse( localStorage.getItem("myThoughts"));
 const clearBtn = document.getElementById("clear-btn");
 const countEl = document.getElementById("thought-counter");
-
+ 
 submitBtn.addEventListener("click", function(){
     myThoughts.push(inputEl.value);
     inputEl.value = "";
